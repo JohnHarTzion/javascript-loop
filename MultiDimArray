@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Challenge 3 - </title>
+</head>
+
+<body>
+
+
+
+<script>
+
+var students = ["Robert", "George", "Bart", "Lisa", "Homer"];
+var subjects = ["Ancient Greek", "Math", "Baking", "Needle work"];
+
+
+var rand = subjects[Math.floor(Math.random() * subjects.length) ];
+
+
+for (i=0; i<students.length; i++) {
+	console.log(students[i]+":"+"<br>");
+	for (rand in subjects) {
+console.log( subjects[rand] +":" + Math.floor(Math.random() * 100 + 1))
+}
+}
+
+</script>
+
+</body>
+</html>
