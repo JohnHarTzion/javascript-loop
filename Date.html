@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<script>
+	
+
+var d=new Date( )
+
+var weekday = ["Sunday", "Monday","Tuesday","Wednesday", "Thursday", "Friday", "Saturday","Sunday"]
+
+var n = weekday[d.getDay()]
+
+var months = ["January", " February", "March", "April", "June", "July", "August", "September", "October","November", "December"]
+var c = months[d.getMonth()]
+
+var period = d.getHours() >= 12 ? 'PM' : 'AM';
+
+console.log (n +" " + d.getMonth()+ ", " + c +" "+ d.getHours() + ":" + d.getMinutes() + " " + period )
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
