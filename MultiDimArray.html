@@ -12,27 +12,34 @@
 
 
 
+
+
 var students = ["Robert", "George", "Bart", "Lisa", "Homer"];
 var subjects = ["Ancient Greek", "Math", "Baking", "Needle work"];
 
 
-var rand = subjects.length;
+var grades=[];
 
 
+for (i=0; i < students.length; i++){
+	_student=students[i]
+	console.log(_student)
+	
+	
+
+	for (x=0; x < subjects.length; x++){
+		_subjects=subjects[x]
+		console.log (_subjects)
 
 
-for (i=0; i<students.length; i++) {
-	document.write(students[i]+":"+"<br>");
-	for (rand in subjects)
-	 {
-var x = Math.floor(Math.random() *100 + 1)
-document.write( subjects[rand] +":" + x + "<br>")
-
+	}
+	
 }
 
-document.write ("Average: "  +  "<br>" )
 
-}
+console.log (grades[_student][_subjects])
+
+
 
 </script>
 
