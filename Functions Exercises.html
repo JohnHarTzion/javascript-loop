@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<script>
+	
+
+ function min(a,b){
+	
+	return Math.min(a,b);
+}
+
+document.write(min(0,-10))
+
+
+
+ function isEven(a){
+	
+
+	if (a == 0){
+		return true;
+	}
+	else if (a < 0) {
+			a == a-2;
+			return isEven(-a);
+		}
+
+		else if (a == 1){
+			return false;
+		}
+		else {
+			return isEven(a - 2);
+		}
+
+		
+}
+
+document.write(isEven(-2))
+
+
+ function countBs(a){
+	var counter = 0
+	for (var i=0; i<a.length; i++){
+		if (a.charAt(i) === "B"){
+			counter++
+		}
+
+
+	}
+	return (counter);
+}
+
+document.write(countBs("BBC"))
+
+
+function countChar(a,b){
+	var counter = 0
+	for (var i=0; i<a.length; i++){
+		if (a.charAt(i) === b){
+			counter++
+		}
+	}
+	return (counter);
+}
+
+document.write(countChar("kakkerlak","k"))
+
+
+</script>
+
+
+</body>
+</html>
