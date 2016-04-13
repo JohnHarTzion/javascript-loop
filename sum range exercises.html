@@ -1,0 +1,51 @@
+function range(start,end){
+	var array = []
+	for (var i = start; i<=end; i++){
+		array.push(i)
+	}
+	
+	
+	return (array)
+}
+document.write (range(1,10))
+
+document.write ("<br>")
+
+
+function rangeTwo (start, end){
+	var x = []
+
+	for (var i = start; i<=end; i++){
+        x.push(i)
+	}
+	var total = x.reduce (function sum(a,b){
+		return a+b;
+	});
+
+	return (total)
+}
+
+document.write(rangeTwo(1,10))
+
+document.write ("<br>")
+
+function rangeThree (start, end, step){
+	var y = [];
+
+	if (step > 0){
+	for (var w=start; w<=end; w+=step){
+			y.push(w)
+		}
+	}
+	if(step < 0){	
+	for (var w=start; w>end; w-=Math.abs(step)){
+			
+			y.push(w)
+		
+	}
+	}
+	
+	
+		return (y)
+}
+console.log(rangeThree(1,10,2))
