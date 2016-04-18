@@ -14,29 +14,27 @@ var str1= "egg,mango,avocado,banana,tomato,pizza,lemon";
 var numbers = [];
 
 
-function findNumbersArray(arr, arrtwo, arrThree){
+function findNumbersArray(arr){
 
-for (i=0; i<arr.length; i++){
+	var x = []
 
-	if (! isNaN (arr[i])){
-		numbers.push(arr[i])		
-	}
-		if (! isNaN (arrtwo[i])){
-			numbers.push(arrtwo[i])
-	
-	}
-	
-		if (! isNaN (arrThree[i])){
-			numbers.push(arrThree[i])
-		}
+	for (i=0; i<arr.length; i++){
+
+		if (! isNaN (arr[i])){
+
+			x.push(arr[i])
+
+			}
+		
 	
 
 }
 numbers.sort (numbers)
-return numbers
+return numbers.concat(x)
 }
-	document.write (findNumbersArray(arr1,arr2,arr3))
-	document.write("<br>")
+	document.write (findNumbersArray(arr1) + "," + findNumbersArray(arr2) + "," +  findNumbersArray(arr3) )
+	
+
 
 
 
