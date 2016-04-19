@@ -14,7 +14,7 @@ var str1= "egg,mango,avocado,banana,tomato,pizza,lemon";
 var numbers = [];
 
 
-function findNumbersArray(arr){
+/*function findNumbersArray(arr){
 
 	var x = []
 
@@ -33,6 +33,49 @@ numbers.sort (numbers)
 return numbers.concat(x)
 }
 	document.write (findNumbersArray(arr1) + "," + findNumbersArray(arr2) + "," +  findNumbersArray(arr3) )
+*/	
+	function getString (arr){
+	 words = []
+
+	for (i=0; i<arr.length; i++){
+
+		if (typeof arr[i] === 'string'){
+			words.push(arr[i])
+		}
+	}
+	return words
+}	
+
+
+function splitString (arr){
+str2 = []	
+
+	return  str2 = arr.split(" ",7);
+
+}
+document.write (splitString(str1))
+
+
+function findValue (arr,arr1){
+	
+
+	var both = [];
+
+
+	for (i=0; i<arr.length; i++){
+		for (x=0; x<arr1.length; x++){
+			if ( arr[i] === arr1[x]){
+				both.push(arr[i])
+			}
+		}
+	}
+	return both
+}
+
+
+
+document.write("<br>")
+document.write(findValue(str1.split(" "),arr1))
 	
 
 
