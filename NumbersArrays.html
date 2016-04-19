@@ -33,8 +33,9 @@ numbers.sort (numbers)
 return numbers.concat(x)
 }
 	document.write (findNumbersArray(arr1) + "," + findNumbersArray(arr2) + "," +  findNumbersArray(arr3) )
-*/	
-	function getString (arr){
+*/
+
+function getString (arr){
 	 words = []
 
 	for (i=0; i<arr.length; i++){
@@ -50,10 +51,10 @@ return numbers.concat(x)
 function splitString (arr){
 str2 = []	
 
-	return  str2 = arr.split(" ",7);
+	return  str2 = arr.split(",");
 
 }
-document.write (splitString(str1))
+console.log(splitString(str1))
 
 
 function findValue (arr,arr1){
@@ -75,12 +76,7 @@ function findValue (arr,arr1){
 
 
 document.write("<br>")
-document.write(findValue(str1.split(" "),arr1))
-	
-
-
-
-
+document.write(findValue(splitString(str1),arr1))
 </script>
 
 
