@@ -1,86 +1,99 @@
-<!DOCTYPE html>
-<html>
-<body>
+	<!DOCTYPE html>
+	<html>
+	<body>
 
-<script>
+	<script>
+		
+
+	var arr1 = [1, 5, "bread", 84, "lemon", "tomato", 120, "egg"];
+	var arr2 = ["pickle", "banana", 23, 127, 555, 1, "mango"];
+	var arr3 = ["elephant", "gorilla", 33, 195, "mamota", "mango"];
+	var str1= "egg,mango,avocado,banana,tomato,pizza,lemon";
+
+
+	var numbers = [];
+
+
+	/*function findNumbersArray(arr){
+
+		var x = []
+
+		for (i=0; i<arr.length; i++){
+
+			if (! isNaN (arr[i])){
+
+				x.push(arr[i])
+
+				}
+			
+		
+
+	}
+	numbers.sort (numbers)
+	return numbers.concat(x)
+	}
+		document.write (findNumbersArray(arr1) + "," + findNumbersArray(arr2) + "," +  findNumbersArray(arr3) )
+	*/
+
+	function getString (arr){
+		 words = []
+
+		for (i=0; i<arr.length; i++){
+
+			if (typeof arr[i] === 'string'){
+				words.push(arr[i])
+			}
+		}
+		return words
+	}	
+
+
+	function splitString (arr){
+	str2 = []	
+
+		return  str2 = arr.split(",");
+
+	}
+
+
+
+
+
+
+
+	function giveAmountToParamater(arr,arr1,arr2,arr3){
 	
 
-var arr1 = [1, 5, "bread", 84, "lemon", "tomato", 120, "egg"];
-var arr2 = ["pickle", "banana", 23, 127, 555, 1, "mango"];
-var arr3 = ["elephant", "gorilla", 33, 195, "mamota", "mango"];
-var str1= "egg,mango,avocado,banana,tomato,pizza,lemon";
+
+	var arrays = arr.concat(arr1)
+	var arrays1 = arrays.concat(arr2)
+	var arrays2 = arrays1.concat(arr3)
+
+	var obj = {}
+
+	for (var i = 0, j = arrays2.length; i < j; i++) {
+   obj[arrays2[i]] = (obj[arrays2[i]] || 0) + 1;
+}
+	
 
 
-var numbers = [];
-
-
-/*function findNumbersArray(arr){
-
-	var x = []
-
-	for (i=0; i<arr.length; i++){
-
-		if (! isNaN (arr[i])){
-
-			x.push(arr[i])
-
-			}
 		
 	
 
-}
-numbers.sort (numbers)
-return numbers.concat(x)
-}
-	document.write (findNumbersArray(arr1) + "," + findNumbersArray(arr2) + "," +  findNumbersArray(arr3) )
-*/
-
-function getString (arr){
-	 words = []
-
-	for (i=0; i<arr.length; i++){
-
-		if (typeof arr[i] === 'string'){
-			words.push(arr[i])
-		}
+		return  obj
+		
 	}
-	return words
-}	
+	console.log(giveAmountToParamater(arr1,arr2,arr3,splitString(str1)))
 
 
-function splitString (arr){
-str2 = []	
-
-	return  str2 = arr.split(",");
-
-}
-console.log(splitString(str1))
 
 
-function findValue (arr,arr1){
+
+
+	</script>
+
 	
 
-	var both = [];
 
-
-	for (i=0; i<arr.length; i++){
-		for (x=0; x<arr1.length; x++){
-			if ( arr[i] === arr1[x]){
-				both.push(arr[i])
-			}
-		}
-	}
-	return both
-}
-
-
-
-document.write("<br>")
-document.write(findValue(splitString(str1),arr1))
-</script>
-
-
-
-
-</body>
-</html>
+	</body>
+	</html>
