@@ -61,7 +61,7 @@
 
 
 
-	function giveAmountToParamater(arr,arr1,arr2,arr3){
+function giveAmountToParamater(arr,arr1,arr2,arr3){
 	
 
 
@@ -71,8 +71,18 @@
 
 	var obj = {}
 
-	for (var i = 0, j = arrays2.length; i < j; i++) {
-   obj[arrays2[i]] = (obj[arrays2[i]] || 0) + 1;
+	var words = []
+
+for (i=0; i<arrays2.length; i++){
+
+			if (typeof arrays2[i] === 'string'){
+				words.push(arrays2[i])
+			}
+		}
+
+
+	for (var i = 0, j = words.length; i < j; i++) {
+   obj[words[i]] = (obj[words[i]] || 0) + 1;
 }
 	
 
@@ -84,8 +94,6 @@
 		
 	}
 	console.log(giveAmountToParamater(arr1,arr2,arr3,splitString(str1)))
-
-
 
 
 
