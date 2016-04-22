@@ -16,42 +16,47 @@
 
 	/*function findNumbersArray(arr){
 
-		var x = []
+	var x = []
 
-		for (i=0; i<arr.length; i++){
-
-			if (! isNaN (arr[i])){
-
-				x.push(arr[i])
-
-				}
-			
-		
+	for (i=0; i<arr.length; i++){
+		if (! isNaN (arr[i])){
+			x.push(arr[i])
+	}
 
 	}
+
 	numbers.sort (numbers)
+
 	return numbers.concat(x)
+
 	}
-		document.write (findNumbersArray(arr1) + "," + findNumbersArray(arr2) + "," +  findNumbersArray(arr3) )
+	
+	document.write (findNumbersArray(arr1) + "," + findNumbersArray(arr2) + "," +  findNumbersArray(arr3) )
 	*/
 
 	function getString (arr){
-		 words = []
 
-		for (i=0; i<arr.length; i++){
 
-			if (typeof arr[i] === 'string'){
-				words.push(arr[i])
-			}
+	words = []
+
+
+	for (i=0; i<arr.length; i++){
+		if (typeof arr[i] === 'string'){
+			words.push(arr[i])
 		}
-		return words
+	}
+
+	return words
+
 	}	
 
 
 	function splitString (arr){
-	str2 = []	
 
-		return  str2 = arr.split(",");
+
+	str2 = []
+
+	return  str2 = arr.split(",");
 
 	}
 
@@ -61,7 +66,7 @@
 
 
 
-function giveAmountToParamater(arr,arr1,arr2,arr3){
+	function giveAmountToParamater(arr,arr1,arr2,arr3){
 	
 
 
@@ -72,70 +77,60 @@ function giveAmountToParamater(arr,arr1,arr2,arr3){
 	var obj = {}
 
 	var words = []
-
-for (i=0; i<arrays2.length; i++){
-
-			if (typeof arrays2[i] === 'string'){
-				words.push(arrays2[i])
-			}
+	for (i=0; i<arrays2.length; i++){
+		if (typeof arrays2[i] === 'string'){
+			words.push(arrays2[i])
 		}
+	}
 
 
-	for (var i = 0, j = words.length; i < j; i++) {
-   obj[words[i]] = (obj[words[i]] || 0) + 1;
-}
+	for (var i = 0, j = words.length; i < j; i++){
+		obj[words[i]] = (obj[words[i]] || 0) + 1;
+	}
 	
-
-
-		
-	
-
 		return  obj
 		
 	}
 	console.log(giveAmountToParamater(arr1,arr2,arr3,splitString(str1)))
-	
-	
-		function showCount(arr){
+
+
+
+	function showCount(arr){
 	var arr1 = [1, 5, "bread", 84, "lemon", "tomato", 120, "egg"];
 	var arr2 = ["pickle", "banana", 23, 127, 555, 1, "mango"];
 	var arr3 = ["elephant", "gorilla", 33, 195, "mamota", "mango"];
 	var str1= "egg,mango,avocado,banana,tomato,pizza,lemon";
-	str2 = arr.split(",")
+	str2 = str1.split(",")
 
 	var arrays = arr1.concat(arr2)
 	var arrays2 = arrays.concat(arr3)
 	var arrays3 = arrays2.concat(str2)
 
 	var obj = {}
-
 	var words = []
 
-for (i=0; i<arrays3.length; i++){
 
-			if (typeof arrays3[i] === 'string'){
-				words.push(arrays3[i])
-			}
+	for (i=0; i<arrays3.length; i++){
+		if (typeof arrays3[i] === 'string'){
+			words.push(arrays3[i])
 		}
-
-
+	}
 
 
 	for (var i = 0, j = words.length; i < j; i++) {
-   obj[words[i]] = (obj[words[i]] || 0) + 1;
-     
-
-     	}
-
-     	for (var i = 0, j = words.length; i<j; i++) {
-     		arr = (obj[words[i]] || 0) ;
-     	}
-
-
-    
-
-return  arr
+		obj[words[i]] = (obj[words[i]] || 0) + 1;
 	}
+
+
+    for (var i = 0, j = words.length; i<j; i++) {
+    	arr = (obj[words[i]] || 0) + 1;
+   	}
+
+   	return  arr
+
+	}
+
+	console.log (showCount("lemon"))
 
 
 
